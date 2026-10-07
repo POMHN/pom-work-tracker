@@ -1,0 +1,76 @@
+body {
+    font-family:
+        Segoe UI,
+        Arial,
+        sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    margin: 0;
+}
+header {
+    background: #1e293b;
+    padding: 20px;
+}
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.card {
+    background: #1e293b;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+input,
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #111827;
+    color: #fff;
+    border: 1px solid #475569;
+    border-radius: 8px;
+}
+button {
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.green {
+    background: #16a34a;
+    color: #fff;
+}
+.blue {
+    background: #2563eb;
+    color: #fff;
+}
+.red {
+    background: #dc2626;
+    color: #fff;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.task {
+    background: #111827;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.done {
+    border-left: 4px solid #16a34a;
+}
+.row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.stats {
+    display: flex;
+    gap: 10px;
+}

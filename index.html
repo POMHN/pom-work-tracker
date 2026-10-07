@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Daily Work Tracker</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header><h1>Daily Work Tracker</h1></header>
+        <main>
+            <div class="card">
+                <div class="grid">
+                    <input id="title" placeholder="Task title" />
+                    <select id="category">
+                        <option>Development</option>
+                        <option>Meeting</option>
+                        <option>Support</option>
+                        <option>Documentation</option>
+                        <option>Testing</option>
+                        <option>Other</option>
+                    </select>
+                    <input id="start" type="time" /><input id="end" type="time" />
+                </div>
+                <br />
+                <textarea id="comment" placeholder="Comments"></textarea><br /><br />
+                <button class="green" id="addBtn">Add Task</button>
+            </div>
+            <div class="card stats">
+                <div>Total: <span id="total">0</span></div>
+                <div>Completed: <span id="completed">0</span></div>
+            </div>
+            <div class="card">
+                <div class="row">
+                    <input id="search" placeholder="Search" /><button class="blue" id="exportBtn">Export JSON</button
+                    ><button class="blue" id="importBtn">Import JSON</button
+                    ><input id="fileInput" type="file" hidden /><button class="green" id="summaryBtn">
+                        Generate Summary
+                    </button>
+                </div>
+            </div>
+            <div class="card"><div id="tasks"></div></div>
+            <div class="card"><textarea id="summary"></textarea></div>
+        </main>
+        <script src="js/app.js"></script>
+    </body>
+</html>
