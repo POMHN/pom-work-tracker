@@ -58,6 +58,11 @@ function editTask(i) {
     editingIndex = i;
     document.getElementById("addBtn").textContent = "Save Task";
     document.getElementById("cancelBtn").style.display = "inline-block";
+
+    document.getElementById("taskForm").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
 }
 
 function cancelEdit() {
@@ -93,8 +98,9 @@ function render() {
             "<strong>" +
             t.title +
             "</strong><br>" +
+            '<span class="category-badge">' +
             t.category +
-            "<br>" +
+            "</span><br>" +
             (t.comment || "") +
             '<br><br>' +
             '<button class="blue" onclick="editTask(' +

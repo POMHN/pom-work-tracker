@@ -9,7 +9,7 @@
     <body>
         <header><h1>Daily Work Tracker</h1></header>
         <main>
-            <div class="card">
+            <div class="card" id="taskForm">
                 <div class="grid">
                     <input id="title" placeholder="Task title" />
                     <select id="category">
@@ -32,6 +32,10 @@
                 <div>Completed: <span id="completed">0</span></div>
             </div>
             <div class="card">
+                <h2>Daily Summary</h2>
+                <textarea id="summary"></textarea>
+            </div>
+            <div class="card">
                 <div class="row">
                     <input id="search" placeholder="Search" /><button class="blue" id="exportBtn">Export JSON</button
                     ><button class="blue" id="importBtn">Import JSON</button
@@ -40,7 +44,6 @@
                     </button>
                 </div>
             </div>
-            <div class="card"><textarea id="summary"></textarea></div>
             <div class="card"><div id="tasks"></div></div>
         </main>
         <script src="js/app.js"></script>
